@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 1</title>
+        <script src="https://static-app.connect.trustedshops.com/events/eventsLib.js"></script>
+        
+        <script src="js/lib/require.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="https://static-app.connect.trustedshops.com/connector/style.css">
+        <script>
+
+            requirejs(['./js/common'], function (common) {
+                requirejs(['app/main1']);
+            });
+            </script>
+    </head>
+    <body>
+        <div id="app">
+            <div id="eTrusted-connector"></div>
+        </div>
+        <script src="https://static-app.connect.trustedshops.com/connector/connector.es.js"></script>
+
+        <script type="module" src="./baseLayerDemo.js">
+        </script>
+    </body>
+</html>
